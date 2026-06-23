@@ -5,6 +5,7 @@ from apis_core.generic.abc import GenericModel
 from apis_core.history.models import VersionMixin
 from apis_core.relations.models import Relation
 from apis_core.apis_entities.abc import E53_Place
+from apis_core.entities.abc import Entity
 from django.db import models
 from django_interval.fields import FuzzyDateParserField
 from django_json_editor_field.fields import JSONEditorField
@@ -21,7 +22,7 @@ class OeaiBaseEntity:
     pass
 
 
-class Person(OeaiBaseEntity, VersionMixin, AbstractEntity):
+class Person(Entity, OeaiBaseEntity, VersionMixin, AbstractEntity):
     PERIOD = [
         ("Byzanz", "Byzanz"),
         ("Griechen", "Griechen"),
@@ -163,6 +164,7 @@ class Person(OeaiBaseEntity, VersionMixin, AbstractEntity):
 
 
 class Institution(
+    Entity,
     OeaiBaseEntity,
     VersionMixin,
     AbstractEntity,
@@ -242,7 +244,7 @@ class Institution(
         return str(self.label)
 
 
-class Place(OeaiBaseEntity, VersionMixin, E53_Place, AbstractEntity):
+class Place(Entity, OeaiBaseEntity, VersionMixin, E53_Place, AbstractEntity):
     class Meta(VersionMixin.Meta, E53_Place.Meta, AbstractEntity.Meta):
         verbose_name = "Place"
         verbose_name_plural = "Places"
