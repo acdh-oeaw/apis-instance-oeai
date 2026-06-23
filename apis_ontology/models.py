@@ -4,8 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from apis_core.generic.abc import GenericModel
 from apis_core.history.models import VersionMixin
 from apis_core.relations.models import Relation
-from apis_core.apis_entities.abc import E53_Place
-from apis_core.entities.abc import Entity
+from apis_core.entities.abc import Entity, E53_Place
 from django.db import models
 from django_interval.fields import FuzzyDateParserField
 from django_json_editor_field.fields import JSONEditorField
@@ -244,7 +243,7 @@ class Institution(
         return str(self.label)
 
 
-class Place(Entity, OeaiBaseEntity, VersionMixin, E53_Place, AbstractEntity):
+class Place(OeaiBaseEntity, VersionMixin, E53_Place, AbstractEntity):
     class Meta(VersionMixin.Meta, E53_Place.Meta, AbstractEntity.Meta):
         verbose_name = "Place"
         verbose_name_plural = "Places"
