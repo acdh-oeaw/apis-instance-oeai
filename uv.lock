@@ -38,7 +38,7 @@ wheels = [
 
 [[package]]
 name = "apis-acdhch-default-settings"
-version = "2.24.0"
+version = "2.24.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "apis-acdhch-django-auditlog" },
@@ -63,9 +63,9 @@ dependencies = [
     { name = "requests" },
     { name = "whitenoise" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/58/d5/d19204df0704327855fe7a584a8cfb0f91d260132fa6b391c2d6b9f37110/apis_acdhch_default_settings-2.24.0.tar.gz", hash = "sha256:b868c05f1a773fd8d53536d10a8e1f06d032cffc33e0bc66622980ed8cbe6042", size = 16894, upload-time = "2026-10-05T06:04:32.763Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4f/e7/f4352a520efa66979acb49c271de7e6b79e9ff3dcaddff14d05fdfdbebaf/apis_acdhch_default_settings-2.24.1.tar.gz", hash = "sha256:d2f7bbb99617d30bd4721bfbe125e6b6cae89523e7f8a366aaf7ec36c6e7e5bb", size = 16959, upload-time = "2026-10-14T09:00:46.685Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/41/56/2b40aa262ebd87d542064518e611e25ca34a11e192a7284430dfc4d42475/apis_acdhch_default_settings-2.24.0-py3-none-any.whl", hash = "sha256:bcc5bd321ac2d771bfe13f17e3eb30f3cea3e69da3d08dcdfea2fa419c93af7b", size = 12314, upload-time = "2026-10-05T06:04:31.442Z" },
+    { url = "https://files.pythonhosted.org/packages/44/25/b2a74af661a6ef508341ccc3e0c6e8033e4dd5b761f8e6cce4b85e1b7a26/apis_acdhch_default_settings-2.24.1-py3-none-any.whl", hash = "sha256:3cf9c65f229cec5e8ecc689fabead6ba1af6615c8eb67b1d95268ecf57885049", size = 12314, upload-time = "2026-10-14T09:00:45.385Z" },
 ]
 
 [[package]]
@@ -129,7 +129,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "apis-acdhch-default-settings", specifier = "==2.24.0" },
+    { name = "apis-acdhch-default-settings", specifier = "==2.24.1" },
     { name = "apis-core-rdf", specifier = "==0.70.0" },
     { name = "django-interval", specifier = ">=0.5.4,<0.6" },
     { name = "django-json-editor-field", specifier = ">=0.4.2,<0.5" },
