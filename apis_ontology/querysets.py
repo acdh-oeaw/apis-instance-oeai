@@ -1,7 +1,6 @@
 from apis_core.uris.models import Uri
-from django.db.models import OuterRef
 from django.contrib.postgres.expressions import ArraySubquery
-
+from django.db.models import OuterRef
 
 uris = (
     Uri.objects.filter(object_id=OuterRef("pk"))
