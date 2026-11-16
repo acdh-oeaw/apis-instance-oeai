@@ -1,7 +1,8 @@
 import csv
-import os
-import logging
 import datetime
+import logging
+import os
+
 from django.core.management.base import BaseCommand, CommandError
 
 

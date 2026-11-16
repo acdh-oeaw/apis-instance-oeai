@@ -1,11 +1,12 @@
 from apis_core.apis_entities.models import Uri
 from django.core.management.base import CommandError
+
 from apis_ontology.management.commands.import_csv import Command as ImportCsvCommand
 from apis_ontology.models import (
     Contains,
+    Includes,
     Institution,
     LocatedIn,
-    Includes,
     Place,
 )
 
