@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = "==3.13.*"
 
 [[package]]
@@ -83,7 +83,7 @@ wheels = [
 
 [[package]]
 name = "apis-core-rdf"
-version = "0.74.0"
+version = "0.74.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "acdh-arche-assets" },
@@ -105,9 +105,9 @@ dependencies = [
     { name = "rdflib" },
     { name = "tablib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/e4/64e7982bded3dc8bc283dad882c0e13cd3965df063a105f43952a02779f7/apis_core_rdf-0.74.0.tar.gz", hash = "sha256:3d22f18308dfcee300d735ad58ce5104fefa709d8a0bea1be2933a066f47f827", size = 385786, upload-time = "2026-11-10T16:05:59.898Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/d9/cd7b52ca255c4e20d6bf6280e104366881b5b61a84d6e19f8d0fdd98dc28/apis_core_rdf-0.74.3.tar.gz", hash = "sha256:6f8e8899e113e7e5f4f4978189bc46425c6a87280e7bb83d003695d9e950d8ae", size = 386715, upload-time = "2026-11-23T07:01:09.455Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0e/7c/b051c4191c7b8ad1edd6f91b26a8beec69908d3c5b79f6ae1d008084f72d/apis_core_rdf-0.74.0-py3-none-any.whl", hash = "sha256:bb9d7dc7e85d3fa996b97de6ebdb8f8e55ff1e1edc64923602e29734ab0c681b", size = 330370, upload-time = "2026-11-10T16:05:58.084Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/73/5f9b28611eb4ff12d97d7978cac6f27a7ec4883a49973071ebc9e200832e/apis_core_rdf-0.74.3-py3-none-any.whl", hash = "sha256:5e29c0a4c03a480fd6666a382c1b283aa9dbc9f2b390549d867a5425f4e9a599", size = 330635, upload-time = "2026-11-23T07:01:07.65Z" },
 ]
 
 [[package]]
@@ -132,7 +132,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "apis-acdhch-default-settings", specifier = "==2.24.2" },
-    { name = "apis-core-rdf", specifier = "==0.74.0" },
+    { name = "apis-core-rdf", specifier = "==0.74.3" },
     { name = "django-interval", specifier = ">=0.5.4,<0.6" },
     { name = "django-json-editor-field", specifier = ">=0.4.2,<0.5" },
     { name = "psycopg", extras = ["binary"], specifier = "~=3.3" },
